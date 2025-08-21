@@ -20,41 +20,47 @@ body{
   background-color: white;
 }
 
+/*Header*/
+
 .navbar{
   background-color: grey;
-  padding: 1rem;
   text-align: end;
-  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
 }
 
 .navbar__titulo{
-  display: inline-block;
-  position: absolute;
   font-size: 20px;
-  left: 2%;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__contenedor{
   width: 40%;
-  display: inline-block;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar__lista-navegacion{
+  display: flex;
+  gap: 30px;
 }
 
 .navbar__item{
-  display: inline-block;
+  list-style: none;
 }
 
 .navbar__link{
   text-decoration: none;
-  margin-right: 3em;
   color: black;
   font-weight: bold;
 }
 
 .navbar__buscador{
-  display: inline-block;
-  width: 20%;
-  margin-right: 30px;
   position: relative;
+  width: 20%;
 }
 
 .navbar__input{
@@ -65,8 +71,8 @@ body{
 
 .navbar__icono{
   position: absolute;
-  right: 0.5em;
-  top: 18%;
+  right: 10px;
+  top: 6px;
   font-size: 20px;
 }
 
@@ -74,13 +80,25 @@ body{
   text-decoration: none;
   border-radius: var(--bordes-redondeado);
   padding: 8px 15px;
-  margin-right: 50px;
   background-color: white;
 }
 
-.contenido__recomendaciones{
+/*Cuerpo*/
+
+.contenido{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* .contenido__recomendaciones{
   margin-top: 2em;
   margin-left: 5em;
+} */
+
+.contenido__recomendacion{
+  display: flex;
 }
 
 .contenido__recomendacion{
@@ -93,7 +111,7 @@ body{
   font-size: 18px;
   font-weight: bold;
   border-radius: var(--bordes-redondeado);
-  margin-left: 5%;
+  /* margin-left: 5%; */
   display: inline-block;
 }
 
@@ -103,16 +121,16 @@ body{
   text-shadow: 5px 5px black;
 }
 
-.contenido__tarjetas{
+/* .contenido__tarjetas{
   margin-top: 2em;
   margin-left: 5.5em;
-}
+} */
 
 .contenido__productos{
   border-radius: var(--bordes-redondeado);
   width: 22%;
-  margin-top: 30px;
-  margin-left: 20px;
+  /* margin-top: 30px;
+  margin-left: 20px; */
   display: inline-block;
   background-color: grey;
   position: relative;
