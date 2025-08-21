@@ -90,24 +90,26 @@ body{
 .contenido{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   align-items: center;
 }
 
-/* .contenido__recomendaciones{
+/* .contenido__recTarjetases{
   margin-top: 2em;
   margin-left: 5em;
 } */
 
+
+/*Primer contenido del main, tarjetas de recomendados*/
 .contenido__recomendaciones{
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
-  gap: 25px;
+  gap: 35px;
   justify-content: center;
   width: 100%;
 }
 
-.contenido__recomendacion{
+.contenido__recTarjetas{
   background:linear-gradient(rgba(55, 94, 136, 0.477), rgba(44, 69, 49, 0.369)), url("../images/conjunto-ropa-calida-capucha-azul-roja_1324823-10472.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,6 +123,10 @@ body{
   /* margin-left: 5%; */
 }
 
+
+.contenido__recTarjetas{
+  box-shadow: 5px 5px var(--Secundario);
+}
 
 
 .contenido__texto{  
@@ -139,7 +145,7 @@ body{
   width: 90%;
 }
 
-
+/*Contenido main, tarjetas de abajo*/
 .contenido__productos{
   display: flex;
   flex-direction: column;
@@ -152,8 +158,13 @@ body{
   /* margin-top: 30px;
   margin-left: 20px; */
   background-color: var(--Secundario);
-  padding-bottom: 30px;
   color: whitesmoke;
+  transition: 1s;
+}
+
+.contenido__productos:hover{
+  transform: scale(1.04);
+  box-shadow: 1px 1px 20px var(--Cuarto);
 }
 
 .contenido__imagen{
