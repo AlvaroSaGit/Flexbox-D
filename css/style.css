@@ -8,22 +8,22 @@
 }
 
 :root{
-  --color-primario: rgb(255, 249, 208);
-  --Secundario: rgb(202, 244, 255);
-  --Terciario : rgb(160, 222, 255);
-  --Cuarto : rgb(90, 178, 255);
+  --color-primario: #FFFBDE;
+  --Secundario: #91C8E4;
+  --Terciario : #749BC2;
+  --Cuarto : #4682A9;
   --bordes-redondeado :10px;
 }
 
 body{
   font-family: "Bitcount Grid Double", system-ui;
-  background-color: white;
+  background-color: var(--color-primario);
 }
 
-/*Header*/
+/*HEADER*/
 
 .navbar{
-  background-color: grey;
+  background-color: var(--Secundario);
   text-align: end;
   display: flex;
   justify-content: space-around;
@@ -34,6 +34,7 @@ body{
   font-size: 20px;
   display: flex;
   align-items: center;
+  color: var(--Cuarto);
 }
 
 .navbar__contenedor{
@@ -54,7 +55,7 @@ body{
 
 .navbar__link{
   text-decoration: none;
-  color: black;
+  color: var(--Cuarto);
   font-weight: bold;
 }
 
@@ -80,16 +81,17 @@ body{
   text-decoration: none;
   border-radius: var(--bordes-redondeado);
   padding: 8px 15px;
-  background-color: white;
+  background-color: var(--Terciario);
+  color: var(--color-primario);
 }
 
-/*Cuerpo*/
+/*CUERPO*/
 
 .contenido{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: center;
+  align-items: center;
 }
 
 /* .contenido__recomendaciones{
@@ -102,12 +104,14 @@ body{
   display: flex;
   gap: 25px;
   justify-content: center;
+  width: 100%;
 }
 
 .contenido__recomendacion{
-  background:linear-gradient(rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.369)), url("../images/conjunto-ropa-calida-capucha-azul-roja_1324823-10472.jpg");
+  background:linear-gradient(rgba(55, 94, 136, 0.477), rgba(44, 69, 49, 0.369)), url("../images/conjunto-ropa-calida-capucha-azul-roja_1324823-10472.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Noto Serif';
   width: 18%;
   height: 8em;
   color: white;
@@ -115,7 +119,6 @@ body{
   font-weight: bold;
   border-radius: var(--bordes-redondeado);
   /* margin-left: 5%; */
-  display: inline-block;
 }
 
 
@@ -123,7 +126,6 @@ body{
 .contenido__texto{  
   text-align: center;
   margin-top: 3em;
-  text-shadow: 5px 5px black;
 }
 
 /* .contenido__tarjetas{
@@ -133,8 +135,8 @@ body{
 
 .contenido__tarjetas{
   display: flex;
-  justify-content: center;
   gap: 25px;
+  width: 90%;
 }
 
 
@@ -142,21 +144,20 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding:15px;
 }
 
 .contenido__productos{
   border-radius: var(--bordes-redondeado);
-  width: 22%;
   /* margin-top: 30px;
   margin-left: 20px; */
-  background-color: grey;
+  background-color: var(--Secundario);
   padding-bottom: 30px;
   color: whitesmoke;
 }
 
 .contenido__imagen{
-  width: 70%;
-  height: 20rem;
+  height: 15rem;
   object-fit: contain;
   /* margin-top: 20px;
   margin-left: 16%; */
@@ -164,9 +165,6 @@ body{
 }
 
 /*Variacion en la segunda imagen de buzo*/
-.contenido__imagen-size{
-  width: 55%;
-}
 
 .contenido__informacion{
   display: flex;
@@ -191,7 +189,8 @@ body{
 } */
 
 .contenido__boton{
-  background-color: white;
+  background-color: var(--Terciario);
+  color: var(--color-primario);
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
