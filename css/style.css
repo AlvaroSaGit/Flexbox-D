@@ -97,8 +97,11 @@ body{
   margin-left: 5em;
 } */
 
-.contenido__recomendacion{
+.contenido__recomendaciones{
+  margin-top: 20px;
   display: flex;
+  gap: 25px;
+  justify-content: center;
 }
 
 .contenido__recomendacion{
@@ -115,6 +118,8 @@ body{
   display: inline-block;
 }
 
+
+
 .contenido__texto{  
   text-align: center;
   margin-top: 3em;
@@ -126,14 +131,25 @@ body{
   margin-left: 5.5em;
 } */
 
+.contenido__tarjetas{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+
+.contenido__productos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contenido__productos{
   border-radius: var(--bordes-redondeado);
   width: 22%;
   /* margin-top: 30px;
   margin-left: 20px; */
-  display: inline-block;
   background-color: grey;
-  position: relative;
   padding-bottom: 30px;
   color: whitesmoke;
 }
@@ -142,34 +158,50 @@ body{
   width: 70%;
   height: 20rem;
   object-fit: contain;
-  margin-top: 20px;
-  margin-left: 16%;
+  /* margin-top: 20px;
+  margin-left: 16%; */
   border-radius: var(--bordes-redondeado);
+}
+
+/*Variacion en la segunda imagen de buzo*/
+.contenido__imagen-size{
+  width: 55%;
+}
+
+.contenido__informacion{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .contenido__informacion{
   font-family: "Noto Serif",
     serif;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
 }
 
 .contenido__titulo-prenda{
-  margin-bottom: 10px;
   font-size: 20px;
 }
 
-.contenido__descripcion-prenda{
+/* .contenido__descripcion-prenda{
   margin-bottom: 20px;
 
-}
-
+} */
 
 .contenido__boton{
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  margin-left: 39%;
   text-decoration: none;
+}
+
+
+/*FOOTER*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
 }
 
