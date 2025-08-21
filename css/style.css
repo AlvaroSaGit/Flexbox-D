@@ -244,8 +244,11 @@ body{
   .navbar__titulo{
     display: none;
   }
+  .navbar{
+    justify-content:space-evenly;
+  }
   .contenido__tarjetas{
-
+    flex-direction: column;
   }
   .contenido__recomendaciones{
     display: flex;
