@@ -8,7 +8,7 @@
 }
 
 :root{
-  --color-primario: #FFFBDE;
+  --color-primario: #fffce9;
   --Secundario: #91C8E4;
   --Terciario : #749BC2;
   --Cuarto : #4682A9;
@@ -213,10 +213,13 @@ body{
 
 /*FOOTER*/
 .footer{
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 20px;
+  text-align: left;
 }
+
 
 
 @media (max-width:1241px) {
