@@ -127,6 +127,7 @@ El icono para la barra del buscador se realizo con relative y absolute*/
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /*Sombras para las recomendaciones*/
