@@ -167,7 +167,7 @@ El icono para la barra del buscador se realizo con relative y absolute*/
 }
 
 .contenido__imagen{
-  height: 15rem;
+  height: 14rem;
   object-fit: contain;
   /* margin-top: 20px;
   margin-left: 16%; */
@@ -220,6 +220,9 @@ El icono para la barra del buscador se realizo con relative y absolute*/
   }
   .contenido__productos{
     width: 40%;
+  }
+  .navbar__icono .bx-search{
+    display: none;
   }
 }
 
