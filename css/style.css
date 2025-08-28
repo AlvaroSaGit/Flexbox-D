@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/*Paleta de colores y el valor predeterminado para bordes*/
 :root{
   --color-primario: #fffce9;
   --Secundario: #91C8E4;
@@ -14,14 +15,16 @@
   --Cuarto : #4682A9;
   --bordes-redondeado :10px;
 }
-
+/*Fuentes y color de fondo*/
 body{
   font-family: "Bitcount Grid Double", system-ui;
   background-color: var(--color-primario);
 }
 
 /*HEADER*/
-
+/*Justifica el contenido para que ocupe el espacio disponible
+  Justifica el texto al final
+*/
 .navbar{
   background-color: var(--Secundario);
   text-align: end;
@@ -49,35 +52,36 @@ body{
   display: flex;
   gap: 30px;
 }
-
+/*Se elimina el estilo de las listas*/
 .navbar__item{
   list-style: none;
 }
-
+/*Se quita la decoracion del Link y se les da valores de color y negrilla*/
 .navbar__link{
   text-decoration: none;
   color: var(--Cuarto);
   font-weight: bold;
 }
-
+/*La barra con medidas porcentuales
+El icono para la barra del buscador se realizo con relative y absolute*/
 .navbar__buscador{
   position: relative;
   width: 20%;
 }
-
+/*Se ajusta el ancho un 90% con relacion al tamaño del padre*/
 .navbar__input{
   width: 90%;
   padding: 7px;
   border-radius: var(--bordes-redondeado);
 }
-
+/*El icono justificado dentro de la caja*/
 .navbar__icono{
   position: absolute;
   right: 10px;
   top: 6px;
   font-size: 20px;
 }
-
+/*Boton*/
 .navbar__boton{
   text-decoration: none;
   border-radius: var(--bordes-redondeado);
@@ -87,7 +91,7 @@ body{
 }
 
 /*CUERPO*/
-
+/*Desplegar o mostrar el contenido en columna*/
 .contenido{
   display: flex;
   flex-direction: column;
@@ -106,6 +110,7 @@ body{
 }
 
 /*Tarjetas*/
+/*Se les da un valor y color a las tarjetas de recomendaciones*/
 .contenido__recTarjetas{
   background:linear-gradient(rgba(55, 94, 136, 0.477), rgba(44, 69, 49, 0.369)), url("../images/conjunto-ropa-calida-capucha-azul-roja_1324823-10472.jpg");
   background-size: cover;
@@ -118,19 +123,17 @@ body{
   font-weight: bold;
   border-radius: var(--bordes-redondeado);
   /* margin-left: 5%; */
+  /*Centrar el texto*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
+/*Sombras para las recomendaciones*/
 .contenido__recTarjetas{
   box-shadow: 5px 5px var(--Secundario);
 }
-
-
-.contenido__texto{  
-  text-align: center;
-  margin-top: 3em;
-}
-
+/*Debajo de las recomendaciones, tarjetas que se alinearan y centraran respectivamente al contenedor padre que es contenido*/
 .contenido__tarjetas{
   display: flex;
   align-items: center;
@@ -156,7 +159,7 @@ body{
   transition: 1s;
   text-align: center;
 }
-
+/*Efectos si el mouse esta por encima*/
 .contenido__productos:hover{
   transform: scale(1.04);
   box-shadow: 1px 1px 20px var(--Cuarto);
@@ -170,13 +173,13 @@ body{
 }
 
 /*Variacion en la segunda imagen de buzo*/
-
+/*Espacio entre la informacion que esta dentro de las tarjetas*/
 .contenido__informacion{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
+/*Fuentes diferentes para la informacion dentro de las tarjetas*/
 .contenido__informacion{
   font-family: "Noto Serif",
     serif;
