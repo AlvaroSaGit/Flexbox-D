@@ -29,7 +29,7 @@ body{
   justify-content: space-around;
   padding: 1rem;
 }
-
+/*Centrado del titulo*/
 .navbar__titulo{
   font-size: 20px;
   display: flex;
@@ -37,13 +37,14 @@ body{
   color: var(--Cuarto);
 }
 
+/*Dentro del contenedor los justifica a la derecha*/
 .navbar__contenedor{
   width: 40%;
   display: flex;
   justify-content: right;
   align-items: center;
 }
-
+/*Distancia entre los elementos dentro del contenedor*/
 .navbar__lista-navegacion{
   display: flex;
   gap: 30px;
@@ -94,12 +95,6 @@ body{
   align-items: center;
 }
 
-/* .contenido__recTarjetases{
-  margin-top: 2em;
-  margin-left: 5em;
-} */
-
-
 /*Primer contenido del main, tarjetas de recomendados*/
 .contenido__recomendaciones{
   margin-top: 30px;
@@ -110,6 +105,7 @@ body{
   width: 100%;
 }
 
+/*Tarjetas*/
 .contenido__recTarjetas{
   background:linear-gradient(rgba(55, 94, 136, 0.477), rgba(44, 69, 49, 0.369)), url("../images/conjunto-ropa-calida-capucha-azul-roja_1324823-10472.jpg");
   background-size: cover;
@@ -134,11 +130,6 @@ body{
   text-align: center;
   margin-top: 3em;
 }
-
-/* .contenido__tarjetas{
-  margin-top: 2em;
-  margin-left: 5.5em;
-} */
 
 .contenido__tarjetas{
   display: flex;
@@ -196,11 +187,6 @@ body{
 .contenido__titulo-prenda{
   font-size: 20px;
 }
-
-/* .contenido__descripcion-prenda{
-  margin-bottom: 20px;
-
-} */
 
 .contenido__boton{
   background-color: var(--Terciario);
